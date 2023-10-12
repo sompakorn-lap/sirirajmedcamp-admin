@@ -1,0 +1,29 @@
+{
+  "name": "sirirajmedcamp24th-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sompakorn-lap/sirirajmedcamp.git"
+  },
+  "author": "IT Team (sirirajmedcamp24th)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sompakorn-lap/sirirajmedcamp/issues"
+  },
+  "homepage": "https://github.com/sompakorn-lap/sirirajmedcamp#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "googleapis": "^123.0.0",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.5.2"
+  }
+}
