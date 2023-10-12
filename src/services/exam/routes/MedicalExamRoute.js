@@ -5,4 +5,7 @@ router.route('/')
   .get(MedicalExamController.getAnswer)
   .patch(MedicalExamController.scoreAnswer)
 
+router.route('/:questionId')
+  .get(MedicalExamController.viewQuestion)
+
 module.exports = router

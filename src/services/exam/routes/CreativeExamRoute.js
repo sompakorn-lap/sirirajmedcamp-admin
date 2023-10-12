@@ -5,4 +5,7 @@ router.route('/')
   .get(CreativeExamController.getAnswer)
   .patch(CreativeExamController.scoreAnswer)
 
+router.route('/:questionId')
+  .get(CreativeExamController.viewQuestion)
+
 module.exports = router

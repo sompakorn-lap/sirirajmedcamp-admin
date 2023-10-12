@@ -1,5 +1,6 @@
 const asyncHandler = require('express-async-handler')
 const { MedicalExamAnswer } = require('../models/WritingAnswer')
+const { MedicalExamQuestion } = require('../models/WritingQuestion')
 
 const getAnswer = asyncHandler(async (req, res) => {
   const { userId, questionId } = req.query
@@ -36,7 +37,18 @@ const scoreAnswer = asyncHandler(async (req, res) => {
   res.status(200).send('update score successful')
 })
 
+const viewQuestion = asyncHandler(async (req, res) => {
+  const { questionId } = req.params
+
+  const question = await MedicalExamQuestion.findOne({ questionId }).lean().exec()
+  if(!question){
+    return res.status(404).send('Question not found')
+  }
+  res.status(200).json(question)
+})
+
 module.exports = {
   getAnswer,
-  scoreAnswer
+  scoreAnswer,
+  viewQuestion
 }
