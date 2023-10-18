@@ -7,13 +7,13 @@ const getAnswer = asyncHandler(async (req, res) => {
 
   if(!userId){
     const answers = await CreativeExamAnswer.find({ editable: false }).lean().exec()
-    return res.status(200).json(answers.map(answer) => {
+    return res.status(200).json(answers.map((answer) => {
       const index = answer.answers.findIndex((item) => (item.questionId === questionId))
       return {
         userId: answer.userId,
         answer: answer.answers[index]
       }
-    }) 
+    })) 
   }
 
   const answer = await CreativeExamAnswer.findOne({ userId, editable: false }).lean().exec()
