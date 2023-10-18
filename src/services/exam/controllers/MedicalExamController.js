@@ -5,14 +5,14 @@ const { MedicalExamQuestion } = require('../models/WritingQuestion')
 const getAnswer = asyncHandler(async (req, res) => {
   const { userId, questionId } = req.query
   if(!userId){
-    const answers = await MedicalExamAnswer.find({ editable: false }).lean().exec()
+    const answers = await MedicalExamAnswer.find({ editable: false }).sort({ userId: 1 }).lean().exec()
     return res.status(200).json(answers.map((answer) => {
       const index = answer.answers.findIndex((item) => (item.questionId === questionId))
       return {
         userId: answer.userId,
         answer: answer.answers[index]
       }
-    })) 
+    }))
   }
 
   const answer = await MedicalExamAnswer.findOne({ userId, editable: false }).lean().exec()
