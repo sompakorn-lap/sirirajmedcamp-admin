@@ -1,66 +1,66 @@
 [
     {
-        "mode": "medical",
+        "mode": "medical 1",
         "number": 1,
         "questionId": "41b9b021-cd0d-4d19-86e1-07d868db4f75",
         "author": "พินนี่"
     },
     {
-        "mode": "medical",
+        "mode": "medical 1",
         "number": 2,
         "questionId": "ef5f6cc7-e939-4408-bd78-3bc3d36b8f3e",
         "author": "พินนี่"
     },
     {
-        "mode": "medical",
+        "mode": "medical 1",
         "number": 3,
         "questionId": "0cd3e6d3-efff-450c-8f69-3474ca7d4a22",
         "author": "ฟ้าใส"
     },
     {
-        "mode": "medical",
+        "mode": "medical 1",
         "number": 4,
         "questionId": "b1105513-173d-4ca4-9726-3d9d8ecd7eef",
         "author": "ฟ้าใส"
     },
     {
-        "mode": "medical",
+        "mode": "medical 1",
         "number": 5,
         "questionId": "f9df5173-7e85-40d6-a9aa-bb4b376ea28f",
         "author": "ฟ้าใส"
     },
     {
-        "mode": "medical",
+        "mode": "medical 1",
         "number": 6,
         "questionId": "e21730b7-32c4-4d0e-b78c-709036504025",
         "author": "เอม"
     },
     {
-        "mode": "medical",
+        "mode": "medical 1",
         "number": 7,
         "questionId": "9f82ab02-bd9d-4bfc-bf8a-c1f6f3e3e0d5",
         "author": "เอม"
     },
     {
-        "mode": "medical",
+        "mode": "medical 2",
         "number": 1,
         "questionId": "b672d9ac-1330-4e7b-8a64-78477c52ce41",
         "author": "พินนี่"
     },
     {
-        "mode": "medical",
+        "mode": "medical 2",
         "number": 2,
         "questionId": "eb184760-1aae-4baf-aa2e-7e70f9bc01d8",
         "author": "ฟ้าใส"
     },
     {
-        "mode": "medical",
+        "mode": "medical 2",
         "number": 3,
         "questionId": "e1ac22ed-ba54-468f-9444-e7ffef7841da",
         "author": "เอม"
     },
     {
-        "mode": "medical",
+        "mode": "medical 2",
         "number": 4,
         "questionId": "664acfde-1316-4058-820f-5b29f87209f7",
         "author": "เอม"
